@@ -54,3 +54,5 @@ scc_*/
 # PyDev files
 .project
 .pydevproject
+# Ignore cythonized files
+ArrayInterface.cpp
