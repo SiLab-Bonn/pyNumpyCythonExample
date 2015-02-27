@@ -78,7 +78,7 @@ setup(
 
 try:
     import pyNumpyCythonExample.ArrayInterface as ai
-    hist = ai.get_hist()
+    hist = ai.get_hist([2, 3, 4])
     print hist
     print hist.flags
     print "STATUS: SUCCESS!"
