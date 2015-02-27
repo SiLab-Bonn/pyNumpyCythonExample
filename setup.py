@@ -79,8 +79,10 @@ setup(
 try:
     import pyNumpyCythonExample.ArrayInterface as ai
     hist = ai.get_hist([2, 3, 4])
-    print hist
-    print hist.flags
+    print 'Hist:', hist
+    print 'Shape:', hist.shape
+    print 'Flags:', hist.flags
+    print 'Remark: Owndata is False due to np.reshape\n but memory is maintained by Python not C++'
     print "STATUS: SUCCESS!"
 except Exception, e:
     print "STATUS: FAILED (%s)" % str(e)
